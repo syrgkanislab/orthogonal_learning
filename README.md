@@ -8,6 +8,7 @@ The code requires the following python packages:
 - `econml`: https://github.com/microsoft/EconML
 - `scikit-learn`: https://github.com/scikit-learn/scikit-learn
 - `numpy`: https://numpy.org/
+- `pandas`: https://github.com/pandas-dev/pandas/
 
 The code is organized as follows:
 - `experiments.py`: Contains all the logic for generating data for different setups, running an experiment and storing the result.
