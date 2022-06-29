@@ -1,4 +1,4 @@
-# orthogonal_learning
+# Orthogonal Statistical Learning
 Experiments for the paper: Orthogonal Statistical Learning
 
 To generate all paper tables run the jupyter notebook `RunAllExperiments.ipynb`
