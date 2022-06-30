@@ -14,9 +14,9 @@ class MySLearner(LinearCateEstimator):
         if W is not None:
             XW = np.hstack([X, W])
         self.model_ = clone(self.overall_model)
-        self.model_.fit(np.hstack([T.reshape(-1, 1), X]), y)
-        ones = np.hstack([np.ones((X.shape[0], 1)), X])
-        zeros = np.hstack([np.zeros((X.shape[0], 1)), X])
+        self.model_.fit(np.hstack([T.reshape(-1, 1), XW]), y)
+        ones = np.hstack([np.ones((X.shape[0], 1)), XW])
+        zeros = np.hstack([np.zeros((X.shape[0], 1)), XW])
         diffs = self.model_.predict(ones) - self.model_.predict(zeros)
         
         self.model_final_ = clone(self.final_model)
